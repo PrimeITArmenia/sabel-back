@@ -1,0 +1,51 @@
+{
+	"name": "sabel-api",
+	"version": "1.0.0",
+	"author": {
+		"name": "David Ghulijanyan",
+		"email": "david.hayki.ghulijanyan@gmail.com"
+	},
+	"main": "src/index.js",
+	"private": true,
+	"scripts": {
+		"dev": "nodemon ./src/index.js",
+		"migrate:down": "migrate-mongo down",
+		"migrate:up": "migrate-mongo up",
+		"prestart": "migrate-mongo up",
+		"start": "cross-env NODE_ENV=production node ./src/index.js",
+		"test": "cross-env NODE_ENV=test"
+	},
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"body-parser": "^1.20.2",
+		"compression": "^1.7.4",
+		"cors": "^2.8.5",
+		"cross-env": "^7.0.3",
+		"crypto-js": "^4.1.1",
+		"dotenv-safe": "^8.2.0",
+		"express": "^4.18.2",
+		"express-validation": "^4.1.0",
+		"express-validator": "^7.0.1",
+		"helmet": "^7.0.0",
+		"http-status": "^1.6.2",
+		"joi": "^17.9.2",
+		"jwt-decode": "^3.1.2",
+		"jwt-simple": "^0.5.6",
+		"lodash": "^4.17.21",
+		"method-override": "^3.0.0",
+		"migrate-mongo": "^10.0.0",
+		"moment-timezone": "^0.5.43",
+		"mongoose": "^7.4.1",
+		"morgan": "^1.10.0",
+		"multer": "^1.4.5-lts.1",
+		"nodemailer": "^6.9.6",
+		"passport": "^0.6.0",
+		"passport-jwt": "4.0.1",
+		"pm2": "^5.3.0",
+		"uuid": "^9.0.0",
+		"winston": "^3.10.0"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.1"
+	}
+}

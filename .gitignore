@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Build directory
+dist/
+
+# Environment files
+.env
+
+# Logs
+logs/
+*.log
+
+# Operating System generated files
+.DS_Store # Mac
+Thumbs.db  # Windows
